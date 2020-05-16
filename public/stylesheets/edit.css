@@ -1,0 +1,27 @@
+.row{
+	margin-top: 20px;
+	margin-left: 80px;
+	margin-right: 80px;
+	background: -webkit-linear-gradient(top, #7579ff, #b224ef);
+	border-radius: 14px;
+}
+body{
+	background: url("https://image.freepik.com/free-vector/robot-hands-touching-digital-button-system-update-modern-screen-abstract-technology-background_48369-16917.jpg");
+	background-size: cover;
+}
+html {
+	height: 100%;
+}
+html {
+    overflow-x: hidden;
+}
+a{
+	color: #E18F12;
+}
+p{
+	text-align: center; 
+	font-size: 2.0em; 
+	margin-top:100px;
+	color: 	#08FF00;
+
+}

@@ -1,0 +1,60 @@
+.thumbnail img{
+	height: 200px;
+	width: 100%;
+}
+.thumbnail{
+	padding: 0; 
+}
+.navbar{
+	border:none;
+	border-radius: 0px;
+	font-size: 1.5em;
+    font-weight: 100;
+}
+.navbar-default {
+  background-color: #1AAFE2;
+}
+.navbar-default .navbar-nav>li>a {
+  color: white;
+}
+.navbar-default .navbar-brand {
+	color: #3D3031;
+}
+.navbar-default .navbar-brand:hover {
+    color: #7B440F;
+}
+.navbar-default .navbar-nav>li>a:hover {
+	color: #80DD6D;
+}
+.jumbotron {
+	margin-top: 100px;
+    color: #3D13CC;
+	background: url("https://media.gettyimages.com/photos/empty-wood-table-top-on-blur-abstract-green-from-garden-and-house-picture-id928765222?					b=1&k=6&m=928765222&s=612x612&w=0&h=bQ1mTUf7CudU0-wTVHu972Oqh7-quxBx3_t1b1q_yiY=");
+	background-size: cover;
+}
+.navbar-default .navbar-collapse {
+	border:none;
+}
+body {
+    font-family: 'Nunito', sans-serif;
+	background: #D2E13E;
+}
+.thumbnail:hover {
+    -webkit-box-shadow: -webkit-box-shadow: -2px 2px 8px 10px rgba(0,0,0,0.72);
+-moz-box-shadow: -2px 2px 8px 10px rgba(0,0,0,0.72);
+box-shadow: -2px 2px 8px 10px rgba(0,0,0,0.72);
+transform: scale(1.1,1.1);
+}
+.thumbnail {
+    transition: all 1s ease;
+}
+
+.jumbotron .btn-primary:hover{
+	background-color: #8F19ED;
+	background-color: #8F19ED;
+}
+.btn-info:hover{
+	background-color: #0B412D;
+	border-color: #0B412D;
+	
+}

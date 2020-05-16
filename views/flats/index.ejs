@@ -1,0 +1,31 @@
+<%- include("../partials/headerindex") %>
+	<div class="container">
+		<div class="jumbotron">
+			<div class="container">
+  				<h1>Welcome to Ghor-Bari!</h1>
+				<p>See our Flats!</p>
+				<p><a class = "btn btn-primary btn-lg" href="/flats/new">Give a new Add!</a></p>
+			</div>
+		</div>
+
+
+		<div class="row text-center" style="display:flex; flex-wrap:wrap;">
+			<% flats.forEach(function(flat){ %>
+				<div class="col-md-3 col-sm-6">
+					<div class="thumbnail">
+						<img src="<%= flat.image %>">
+						<div class="caption">
+							<h4><%= flat.name %></h4>
+							<h4><%= flat.price %> TK</h4>
+						</div>
+						<p>
+							<a href="/flats/<%= flat._id %>" class="btn btn-info">More Info</a>
+						</p>
+					</div>
+				</div>	
+<% }) %>
+		</div>
+	</div>
+<%- include("../partials/footer_index") %>
+
+

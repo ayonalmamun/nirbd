@@ -1,0 +1,50 @@
+.row{
+	margin-top: 20px;
+	margin-left: 70px;
+	margin-right: 70px;
+	background: -webkit-linear-gradient(top, #7579ff, #b224ef);
+	border-radius: 14px;
+}
+body{
+	background : url("login.jpg");
+	background-size: cover;
+}
+html {
+	height: 100%;
+}
+html {
+    overflow-x: hidden;
+}
+a{
+	color: #E18F12;
+}
+p{
+	text-align: center; 
+	font-size: 2.5em; 
+	margin-top: 100px;
+	background: rgba(58, 127, 136, 0.67);
+	color: red;
+}
+.btn-primary:hover{
+	background-color: #5BD24C;
+	border-color: #5BD24C;
+}
+#l-s{
+	text-align:center;
+	color: #3DDE1F;
+}
+.form-control{
+	font-size: 18px;
+    background: #f7f7f7;
+    box-sizing: border-box;
+    color: #B1680D;
+    border: 3px solid rgba(0, 0, 0, 0);
+}
+input:focus{
+    background: #fff;
+    border: 3px solid #2980b9;
+    outline: none;
+}
+#back{
+	font-size: 1.5em; 
+}

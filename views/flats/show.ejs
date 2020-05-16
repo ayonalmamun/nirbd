@@ -1,0 +1,55 @@
+<%- include("../partials/header_show") %>
+<div class="container">
+	<div class="row">
+		<div class="col-md-3">
+			
+		</div>
+		
+		<div class="col-md-9">
+			<div class="thumbnail">
+				<img class="img-responsive" src="<%= flat.image %>">
+				<div class="caption">
+					<% if(currentUser && flat.author.id.equals(currentUser._id)){ %>
+					<form id="delete" action="/flats/<%= flat._id %>?_method=DELETE" method="post">
+						<button class="pull-right btn btn-danger">Delete</button>
+					</form>
+					<a class="pull-right btn btn-warning edit-btn" href="/flats/<%=flat._id%>/edit">Edit</a>
+					<% } %>
+					<h4><a> <%= flat.name %> </a></h4>
+					<h4><a> <%= flat.price %> TK</a></h4>
+					<h4><a>Contact: <%= flat.contact %> </a></h4>
+					<h4><a><%= flat.description %> </a></h4>
+					<p><em>Submitted By <%= flat.author.username %></em></p>
+				</div>
+			</div>
+			<div class="well">
+				<div class="text-right">
+					<p>
+						<a class="btn btn-success" href="/flats/<%= flat._id %>/comments/new">Add a New Comment</a>
+					</p>
+				</div>
+				<hr>
+				<% flat.comments.forEach(function(comment){ %>
+					<div class="row">
+						<div class="col-md-12">
+							<strong><%= comment.author.username %></strong>
+							<span class="pull-right"><%= comment.created.toDateString() %></span>
+							<p>
+								<%= comment.text %>
+							</p>
+							<% if(currentUser && comment.author.id.equals(currentUser._id)){ %>
+							<a 	class="btn btn-xs btn-warning" 
+							   	href="/flats/<%= flat._id %>/comments/<%= comment._id %>/edit">
+								Edit</a>
+							<form id="delete" action="/flats/<%= flat._id %>/comments/<%= comment._id %>?_method=DELETE" method="post">
+								<button class="btn btn-xs btn-danger">Delete</button>
+							</form>
+							<% } %>
+						</div>
+					</div>
+				<% }) %>
+			</div>
+		</div>
+	</div>
+</div>
+<%- include("../partials/footer") %>
