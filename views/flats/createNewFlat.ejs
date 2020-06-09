@@ -1,24 +1,25 @@
 <%- include("../partials/header_create") %>
 
 <div class="container">
-	<div class="row">
-		<h1 style="text-align:center">Create a new Flat!</h1>
-
-	<div style="width:30%;margin:25px auto;">
+	<div class="row justify-content-center">
+		<div class="col-md-12 text-center">
+			<h1>Create a Add!</h1>
+		</div>
+	<div class="col-xs-12 col-md-6 col-lg-4">
 		<form action="/flats" method="post">
 		<div class="form-group">
 			<input class="form-control" type="text" name= "name" placeholder="name">
 		</div>
-		<div class="form-group">
+        <div class="form-group">
 		<input class="form-control" type="text" name= "description" placeholder="description">
 		</div>
-		<div class="form-group">
+        <div class="form-group">
 			<input class="form-control" type="text" name= "image" placeholder="image url">
 		</div>
 		<div class="form-group">
-		<input class="form-control" type="number" name= "price" placeholder="price" min="1000000" step="100000">
+			<input class="form-control" type="number" name= "price" placeholder="price" min="1000000" step="100000">
 		</div>
-		<div class="form-group">
+        <div class="form-group">
 		<input class="form-control" type="text" name= "contact" placeholder="contact">
 		</div>
 		<div class="form-group">

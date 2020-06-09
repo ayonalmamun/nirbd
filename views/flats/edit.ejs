@@ -1,10 +1,12 @@
 <%- include("../partials/header_edit") %>
 
 <div class="container">
-	<div class="row">
-		<h1 style="text-align:center">Edit <%= flat.name %></h1>
+	<div class="row justify-content-center">
+		<div class="col-md-12 text-center">
+			<h1>Create a Add!</h1>
+		</div>
 
-	<div style="width:30%;margin:25px auto;">
+	<div class="col-xs-12 col-md-6 col-lg-4">
 		<form action="/flats/<%= flat._id %>?_method=PUT" method="post">
 		<div class="form-group">
 			<input class="form-control" type="text" name="name" placeholder="title" value="<%= flat.name %>">

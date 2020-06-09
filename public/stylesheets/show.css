@@ -1,14 +1,9 @@
-.card-img, .card-img-top{
-	height: 200px;
-	width: 100%;
-}
 .navbar{
 	border:none;
 	border-radius: 0px;
 	font-size: 1.5em;
     font-weight: 100;
 }
-
 .bg-dark{
 	background-color: #4F15DF!important;
 }
@@ -39,20 +34,7 @@ body {
     font-family: 'Nunito', sans-serif;
 	background: #D2E13E;
 }
-.card:hover {
-    -webkit-box-shadow: -webkit-box-shadow: -2px 2px 8px 10px rgba(0,0,0,0.72);
--moz-box-shadow: -2px 2px 8px 10px rgba(0,0,0,0.72);
-box-shadow: -2px 2px 8px 10px rgba(0,0,0,0.72);
-transform: scale(1.1,1.1);
-}
-.card {
-    transition: all 1s ease;
-}
 
-.jumbotron .btn-primary:hover{
-	background-color: #8F19ED;
-	background-color: #8F19ED;
-}
 .btn-info:hover{
 	background-color: #0B412D;
 	border-color: #0B412D;
