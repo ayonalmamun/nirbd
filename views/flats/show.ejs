@@ -10,7 +10,7 @@
 			<div class="card mb-3">
   				<img class="card-img-top" src="<%= flat.image %>" alt="<%= flat.name %>">
   			<div class="card-body">
-				<h4 class="float-right"><%= flat.price%> TK</h4>
+				<h4 class="text-right"><%= flat.price%> TK</h4>
     			<h5 class="card-title"><%= flat.name %></h5>
                 <h4 class="card-title"><a>Contact: <%= flat.contact %> </a></h4>
 				<p><em>Submitted By <%= flat.author.username %></em></p>
@@ -43,8 +43,8 @@
 						<div class="col-md-12 mb-2">
 							<div class="card">
 							<div class="card-body">
-								<div class="float-right"><%= comment.created.toDateString() %></div>
-                <div class="float-left">
+								<div class="text-right"><%= comment.created.toDateString() %></div>
+                <div>
 					
 							<p class="card-title"><%= comment.author.username %></p>
 					
